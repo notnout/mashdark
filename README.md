@@ -20,35 +20,35 @@ MashDark skin is using couple tricks in comparison with existing `mc` skins to m
 ### Installation (on Mac and Linux)
 #### Install using GIT
 ```sh
-mkdir -p ~/mashdark ; cd ~/mashdark
+cd ~ ; mkdir -p ~/mashdark
 git clone https://github.com/notnout/mashdark.git
 
 mkdir -p ~/.local/share/mc/skins ~/.config/mc
-mv ~/.config/mc/filehighlight.ini{,.old}
-cp mashdark.ini ~/.local/share/mc/skins/mashdark.ini
-cp filehighlight.ini ~/.config/mc/filehighlight.ini
+mv ~/.config/mc/filehighlight.ini{,.bak}
+cp ~/mashdark/mashdark.ini ~/.local/share/mc/skins/mashdark.ini
+cp ~/mashdark/filehighlight.ini ~/.config/mc/filehighlight.ini
 ```
 #### Install Manually
-1. Download the latest skin [raw file](https://raw.githubusercontent.com/notnout/mashdark/mashdark.ini) and save it as `~/.local/share/mc/skins/mashdark.ini`
+1. Download the latest skin [raw file](https://raw.githubusercontent.com/notnout/mashdark/master/mashdark.ini) and save it as `~/.local/share/mc/skins/mashdark.ini`
 2. Download the latest highlight [raw file](https://raw.githubusercontent.com/notnout/mashdark/master/filehighlight.ini) and save it as `~/.config/mc/filehighlight.ini`
 #### Activate the skin
 - **Option 1:** Choose the skin in the mc UI: Options → Appearance → Skin … and select this skin.
 - **Option 2:** Update your mc settings: edit `~/.config/mc/ini` and add `skin=mashdark` to the `[Midnight-Commander]` section.
 #### Configure mc for better experience
-In your running mc, select following options:
-<p align="center">
-  <img src="assets/mc-configure-options.png"/>
-  <img src="assets/mc-layout.png"/>
-  <img src="assets/mc-panel-options.png"/>
-</p>
+In your running mc, open Options menu (top of screen) and update following configurations:
 
+<p align="center">
+  <img src="assets/mc-configure-options.png" width="40%"/>
+  <img src="assets/mc-layout.png" width="40%"/>
+  <img src="assets/mc-panel-options.png" width="40%"/>
+</p>
 
 ### Update
 ```sh
 cd ~/mashdark
 git pull
-cp mashdark.ini ~/.local/share/mc/skins/mashdark.ini
-cp filehighlight.ini ~/.config/mc/filehighlight.ini
+cp ~/mashdark/mashdark.ini ~/.local/share/mc/skins/mashdark.ini
+cp ~/mashdark/filehighlight.ini ~/.config/mc/filehighlight.ini
 ```
 ### Summary of files
 - `mashdark.ini`
@@ -56,10 +56,15 @@ cp filehighlight.ini ~/.config/mc/filehighlight.ini
 - `filehighlight.ini`
 	- In this file we add new file type `[any]` on the bottom. This allows us to style file names differently than the border (I really wish mc would actually provide binding for this), and this then allows us to style the borders with different color than the file names.
 ## Screenshots
+
 <p align="center">
-  <img src="assets/mashdark-screenshot-diff.png"/>
-  <img src="assets/mashdark-screenshot-hex.png"/>
+  <img src="assets/mashdark-screenshot-menu.jpg"/>
+  <img src="assets/mashdark-screenshot-dialog.jpg"/>
+  <img src="assets/mashdark-screenshot-preview.jpg"/>
+  <img src="assets/mashdark-screenshot-diff.jpg"/>
+  <img src="assets/mashdark-screenshot-hex.jpg"/>
 </p>
+
 ### References
 - see skin viewer/editor https://phplego.github.io/mc/
 - colors: https://misc.flogisoft.com/bash/tip_colors_and_formatting
