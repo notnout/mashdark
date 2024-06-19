@@ -9,13 +9,13 @@
 </p>
 
 <p align="center">
-  <img src="assets/mashdark-screenshot.png"/>
+  <img src="assets/mashdark-screenshot.jpg"/>
 </p>
 
 ## MashDark - finally a good looking mc skin 
 MashDark provides a modern dark skin for [midnight commander](https://github.com/MidnightCommander/mc) - a surprisingly powerfull file manager for commandline that is better than many of visual apps (and you can use it both locally and over ssh on your server). 
-MashDark skin is using couple tricks in comparison with existing `mc` skins to make it look better (e.g. it styles border lines with different color than the foreground text). 
-*Note: Requires `mc` version 4.8 or newer. Install with e.g. `sudo apt install mc`*
+MashDark skin is using couple tricks in comparison with existing `mc` skins to make it look better (e.g. it styles border lines with different color than the foreground text). <br/>
+*Note: Requires `mc` version 4.8 or newer. Install with e.g. `sudo apt install mc`* <br/>
 *Note: I hope that `mc` adds the needed bindings asap so these hacks are not needed in future.*
 ### Installation (on Mac and Linux)
 #### Install using GIT
@@ -35,6 +35,7 @@ cp filehighlight.ini ~/.config/mc/filehighlight.ini
 - **Option 1:** Choose the skin in the mc UI: Options → Appearance → Skin … and select this skin. 
 - **Option 2:** Update your mc settings: edit `~/.config/mc/ini` and add `skin=mashdark` to the `[Midnight-Commander]` section.
 #### Configuring the MC UI 
+
 ### Update
 ```sh
 cd ~/mashdark
